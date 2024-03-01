@@ -1,0 +1,167 @@
+.intake-container {
+    background: linear-gradient(180deg, rgb(13, 5, 23) 0%,
+            rgba(0, 0, 0, 0.49) 35.5%), linear-gradient(84deg, #4c098a 6.99%,
+            rgba(0, 0, 0, 0.00) 72.06%), rgb(51, 77, 207) 50% / cover no-repeat;
+    color: white;
+    height: 100%;
+    width: 100%;
+
+    p {
+        color: #586d86;
+    }
+
+    .intake-container-head {
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+    .intake-container-head-left {
+        width: 20%;
+        margin-left: 40px;
+    }
+
+    .intake-container-body {
+        display: flex;
+
+
+        .intake-container-body-left {
+            img {
+                width: 500px;
+                height: 800px;
+
+                @include mobile {
+                    width: 90%;
+                    height: 50%;
+                }
+                @include tablet-pro{
+                    width: 0%;
+                    height: 0%;
+
+                }
+            }
+
+            margin-left: 40px;
+        }
+
+        .intake-details {
+            display: flex;
+
+        }
+
+        .intake-batch,
+        .intake-apply {
+            padding-left: 100px
+        }
+
+        .intake-apply {
+            button {
+                margin-top: 40px;
+                margin-left: 250px;
+                height: 50%;
+                width: 150px;
+                background-color: rgba(4, 187, 242, 1);
+                color: white;
+                text-align: center;
+                border-style: none;
+                @include mobile{
+                    margin-left: -200px;
+                    width: auto;
+                    height: 30px;
+                   margin-top: 120px;
+
+                }
+            }
+
+
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+        @include tablet-pro{
+            padding-bottom: 40px;
+          
+        }
+    }
+
+    .intake-container-body-right {
+        margin-left: 30px;
+
+    }
+
+    .data-engineering {
+        border-left: 3px solid #89c0ff;
+        padding-left: 25px;
+
+    }
+
+    .intake-container-body-right-top {
+        background-color: rgb(8, 35, 60);
+        margin-right: 40px;
+        padding: 15px 15px 15px 15px;
+    }
+    .intake-container-body-right-top:hover{
+        background-color:rgba(3, 84, 159, 1);
+
+    }
+
+    .intake-right-content {
+        display: flex;
+
+        img {
+            margin-left: 800px;
+
+        }
+
+    }
+
+    .small-box {
+        margin-top: 20px;
+        background: rgb(8, 35, 60);
+        width: 55%;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        margin-right: 40px;
+
+        @include mobile {
+            width: 340px;
+            padding-left: 1%;
+            margin-left: 0%;
+        }
+    }
+    .small-box:hover{
+        background-color:rgba(3, 84, 159, 1);
+    }
+
+    .small-box-arrow {
+        margin-top: 100px;
+        margin-left: 170px;
+
+    }
+
+    .intake-small-box-top {
+        display: flex;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .intake-small-box-bottom {
+        display: flex;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }
+
+
+}

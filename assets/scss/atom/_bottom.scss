@@ -1,0 +1,23 @@
+.bottom{
+    background-color: rgb(10, 5, 35);
+    padding-bottom: 70px;
+    height: 140px;
+    h4,p{
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+    }
+    span {
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+    
+        i {
+            margin: 0 5px; 
+            color: white;
+            padding-right: 20px;
+            font-size: 25px;
+        }
+    }
+    }

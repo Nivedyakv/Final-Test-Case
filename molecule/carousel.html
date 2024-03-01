@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <link rel="stylesheet" href="/assets/scss/style.css">
+    
+</head>
+<body>
+    <div class="testimonial">
+        <h1>Employee testimonial </h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+            tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="/assets/img/vismaya.jpg" alt="Image 1">
+                <div class="quote"><img src="/assets/img/quote.svg" alt=""></div>
+                <h3>Vismaya Balakrishnan</h3>
+                <p>As a fresher, Beinex is the only company that provided me with a training & absorption
+                     opportunity. What I love here is the ... </p>
+                    <h4><a href="">Read More</a><img src="/assets/img/downarrow.svg" alt=""></h4>
+
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/devika.jpg" alt="Image 2">
+                <div class="quote"><img src="/assets/img/quote.svg" alt=""></div>
+                <h3>Devika Jyothy</h3>
+                <p>First of all, as a fresher, this is the most incredible opportunity I can ever get.
+                     Three months of internship and getting a job in the ...</p>
+                     <h4><a href="">Read More</a><img src="/assets/img/downarrow.svg" alt=""></h4>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/azaz.jpg" alt="Image 3">
+                <div class="quote"><img src="/assets/img/quote.svg" alt=""></div>
+                <h3>Azaz Ahmed Khan</h3>
+                <p>When I started my training program at Beinex last year, I always dreamed about working 
+                    here as a permanent employee because, during the...</p>
+                    <h4><a href="">Read More</a><img src="/assets/img/downarrow.svg" alt=""></h4>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/vismaya.jpg" alt="Image 1">
+                <div class="quote"><img src="/assets/img/quote.svg" alt=""></div>
+                <h3>Vismaya Balakrishnan</h3>
+                <p>As a fresher, Beinex is the only company that provided me with a training & absorption
+                     opportunity. What I love here is the ... </p>
+                     <h4><a href="">Read More</a><img src="/assets/img/downarrow.svg" alt=""></h4>
+
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/devika.jpg" alt="Image 2">
+                <div class="quote"><img src="/assets/img/quote.svg" alt=""></div>
+                <h3>Devika Jyothy</h3>
+                <p>First of all, as a fresher, this is the most incredible opportunity I can ever get.
+                     Three months of internship and getting a job in the ...</p>
+                     <h4><a href="">Read More</a><img src="/assets/img/downarrow.svg" alt=""></h4>
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/azaz.jpg" alt="Image 3">
+                <div class="quote"><img src="/assets/img/quote.svg" alt=""></div>
+                <h3>Azaz Ahmed Khan</h3>
+                <p>When I started my training program at Beinex last year, I always dreamed about working 
+                    here as a permanent employee because, during the...</p>
+                    <h4><a href="">Read More</a><img src="/assets/img/downarrow.svg" alt=""></h4>
+            </div>
+           
+        </div>
+        <div class="carousel-controls right">&#10095;</div>
+        <div class="carousel-controls left">&#10094;</div>
+    </div>
+
+    <script>
+        const carouselInner = document.querySelector('.carousel-inner');
+        const carouselItems = document.querySelectorAll('.carousel-item');
+        const totalItems = carouselItems.length;
+        let currentIndex = 0;
+
+        function showItem(index) {
+            const itemWidth = carouselItems[0].offsetWidth;
+            carouselInner.style.transform = `translateX(-${index * itemWidth}px)`;
+        }
+
+        document.querySelector('.carousel-controls.left').addEventListener('click', function () {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showItem(currentIndex);
+            }
+        });
+
+        document.querySelector('.carousel-controls.right').addEventListener('click', function () {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+                showItem(currentIndex);
+            }
+        });
+    </script>
+</body>
+</html>

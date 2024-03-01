@@ -1,0 +1,72 @@
+.testimonial{
+    text-align: center;
+    width: 45%;
+    padding-left:28%;
+    padding-right: 28%;
+    h1{
+        color: rgba(16, 56, 91, 1);
+        text-align: center;
+    }
+    
+}
+.carousel {
+    width: 88%; 
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 33.33%; /* Display 3 items at a time */
+    padding: 10px;
+    box-sizing: border-box;
+    h4{
+        img{
+            padding-left: 10px;
+            
+        }
+        a{
+            text-decoration:none;
+          color:rgba(0, 96, 228, 1) ;  
+        }
+    }
+}
+
+
+.carousel-item img {
+    max-width: 130px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(16, 56, 91, 1);
+
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.carousel-controls.right {
+    right: 0;
+}
+
+.carousel-controls.left {
+    right:
+     50px; /* Adjust as needed */
+}
+.quote img{
+    padding-left: 300px; 
+}

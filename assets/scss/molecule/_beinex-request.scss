@@ -1,0 +1,127 @@
+.request-content {
+    h1 {
+        padding-left: 10%;
+    }
+
+    padding-bottom: 40px;
+}
+
+.request-content-body {
+    display: flex;
+
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.request-content-left {
+    width: 90%;
+
+    @include mobile {
+        width: 100%;
+
+    }
+
+    button {
+        margin-left: 14.5%;
+        width: 12%;
+        height: 13%;
+        margin-top: 2%;
+        text-align: center;
+        padding-bottom: 0.3%;
+        padding-top: 0.2%;
+
+        img {
+            margin-left: 10px;
+            margin-top: 3%;
+
+        }
+        @include mobile {
+           width: 100px;
+        }
+    }
+
+}
+
+.request-content-right {
+    width: 25%;
+    padding-right: 10%;
+    border-left: 2px solid black;
+
+    h1,
+    p {
+        padding-left: 20px;
+    }
+
+    @include mobile {
+        display: flex;
+
+    }
+}
+
+.request-content-input {
+    margin-left: 11%;
+    padding-bottom: 2%;
+    padding-right: 20px;
+
+    input {
+        width: 40%;
+        height: 30px;
+        margin-left: 4%;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5%;
+            width: 100%;
+            border-left: 1px solid;
+        }
+        
+    }
+
+    img {
+        position: relative;
+        left: -30px;
+        top: 3px;
+
+        @include mobile {
+            left: 98%;
+            top: -41px;
+        }
+
+    }
+}
+
+.request-content-Message {
+    margin-left: 14.5%;
+
+    img {
+        position: relative;
+        left: -30px;
+        top: 0;
+    }
+
+    input {
+        width: 89%;
+        height: 60px;
+        @include mobile {
+            border-top:  solid 1px black;
+        }
+    }
+
+}
+
+.code {
+    input {
+        width: 10%;
+        display: flex;
+    }
+
+}
+
+.num {
+    input {
+        width: 50%;
+    }
+}

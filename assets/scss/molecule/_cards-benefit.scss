@@ -1,0 +1,41 @@
+.box-benefit{
+// padding-left: 10%;
+position: absolute;
+display: flex;
+@include mobile{
+   top: 1400px;
+   display: flex;
+   flex-direction: column;
+  
+}
+@include tablet-pro{
+  
+   display: flex;
+width: 800px;
+padding-left: 110px;
+
+}
+
+
+.cards-benefit{
+   padding: 10px 15px 10px 35px ;
+width: 320px;
+height: fit-content;
+top: 2259px;
+left: 89px;
+background-color: white;
+padding-right: 20px;
+@include tablet-pro{
+  height: 490px;
+}
+@include mobile{
+   height: 245px;
+  
+ }
+}}
+.cards-benefit-main{
+   @include mobile{
+     margin-left: -102px;
+    
+    }
+}

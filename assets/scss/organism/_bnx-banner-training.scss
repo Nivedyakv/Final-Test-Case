@@ -1,0 +1,86 @@
+.content-banner1 {
+    // background-image: url(../img/backgrey.jpg);
+    background: linear-gradient(180deg, rgb(54, 52, 52) 0%,
+            rgba(0, 0, 0, 0.49) 35.5%), linear-gradient(84deg, #7b7272 6.99%,
+            rgba(0, 0, 0, 0.00) 72.06%), url(../img/backgrey.jpg), rgb(249, 241, 241) 50% / cover no-repeat;
+
+    color: rgb(255, 255, 255);
+    position: relative;
+    height: 510px;
+    @include mobile{
+             height: max-content;
+    }
+    @include tablet-pro {
+        width: 100%;
+        
+   }
+    h4 {
+        padding-left: 40px;
+    }
+
+    h2 {
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+
+    .exclnt-list {
+        display: flex;
+        margin-left: 3%;
+        
+        ul {
+
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        
+        }
+
+        li {
+
+            list-style-type: none;
+            padding: 30px;
+
+        }
+
+        img {
+            width: 29px;
+           
+            padding-right: 20px;
+        }
+
+    }
+
+    p {
+        background-color: rgba(45, 130, 229, 1);
+        height: 50px;
+        padding-top: 13px;
+        position: relative;
+        margin-top: 32px;
+        width: 61%;
+        padding-left: 60px;
+        @include mobile{
+           width: 50%;
+             padding-left: 10%;
+           padding-bottom: 20px;
+        }
+        @include tablet-pro {
+            width:89%;
+            // height: 30px;
+        }
+    }
+
+}
+
+.boy-image {
+    right: 60px;
+    position: absolute;
+    top: 124px;
+    @include mobile{
+        width: 0%;
+    }
+    @include tablet-pro {
+        height: 200px;
+        right: 0%;
+       padding-top: 14%;
+    }
+}

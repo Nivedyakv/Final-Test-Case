@@ -1,0 +1,58 @@
+
+.card-section{
+    width: 100%;
+    height: 200px;
+    padding-right: 20px;
+    
+    }
+
+
+
+.line-image{
+ margin-left: 50px;
+}
+.card-logo{
+    width: 70px;
+    height: 40px;
+   
+   
+}
+.main-card{
+    display: flex;
+ padding-left: 30px;
+ padding-right: 30px;
+ 
+    
+.blue-card{
+   background-color: rgba(43, 152, 247, 1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 24px 16px;
+   text-align: center;
+   position: relative;
+   width:50%;
+   height: auto;
+
+
+   .fire-popper{
+    position: absolute;
+    bottom: 175px;
+    width: 20px;
+   }
+   .content-center{
+    margin-top: 45%;
+    color: white;
+   
+   }
+   @include mobile {
+  margin-top: 45px;
+  
+     }
+}
+@include mobile {
+    display: flex;
+        flex-direction: column; 
+     }
+}

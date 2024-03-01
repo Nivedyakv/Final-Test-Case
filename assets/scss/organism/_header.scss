@@ -1,0 +1,60 @@
+.head {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 20px;
+    background-color: white;
+
+    .head-left {
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            padding: 10px;
+        }
+
+    }
+
+    //second div
+    .head-right {
+        text-align: right;
+
+        ul {
+
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+
+        }
+
+        li {
+            float: left;
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        button {
+            background-color: rgb(32, 44, 111);
+            width: 15%px;
+            height: 30px;
+            color: white;
+            justify-content: center;
+            padding: 3px;
+
+            img {
+                padding: 0px;
+            }
+        }
+
+        img {
+            padding: 2px;
+        }
+    }
+
+}

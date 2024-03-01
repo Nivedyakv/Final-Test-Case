@@ -1,0 +1,46 @@
+.subscribe {
+    background: #5397f1;
+    display: flex;
+    width: 90%;
+    color: white;
+    padding-left: 90px;
+    margin-left: 2%;
+padding-top: 15px;
+padding-bottom: 15px;
+position: relative;
+bottom: 650px;
+@include mobile{
+    display: inline;
+    // position: absolute;
+    // bottom: 10%;
+    bottom:1300px ;
+    width: 380px;
+    padding: 0px 0px 0px 0px;
+}
+@include tablet-pro{
+   margin-left: 1%;
+  
+}
+    .subscribe-content {
+        padding-left: 41px;
+        width: 71%;
+    }
+
+    .subscribe-search {
+        margin-top: 2%;
+   
+        input {
+            width: 230px;
+            height: 30px;
+        }
+        button{
+            height: 36px;
+            width: 50px;
+            background-color: blue;
+            border: none;
+        }
+        @include mobile{
+            padding-left: 45px;
+        }
+    }
+}
